@@ -1,0 +1,137 @@
+*{
+	/*outline: 1px dotted red;*/
+	margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#wrapper
+{
+	background-color: mintcream;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.row{
+	
+}
+#leftHand{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 25px;
+}
+
+#holdPiece{
+	vertical-align: top;
+	height: 150px;
+	width: 150px;
+	margin-top: 45px;
+
+}
+
+#score{
+    width: 150px;
+    height: 300px;
+    margin-top: 125px;
+}
+
+#gameBoard{
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    height: 650px;
+    margin: 0px 45px 0px 45px;
+    padding: 5px 45px 0 45px;
+}
+
+#nextPiece{
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 400px;
+	margin-top: 45px;
+}
+
+.blockDiv{
+
+}
+
+.oPiece{
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f2f101;
+	border: 2px solid #f2f101;
+	border-style: outset;
+}
+
+.iPiece{
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #00e4ff;
+	border: 2px solid #00e4ff;
+	border-style: outset;	
+}
+
+.sPiece{
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #02f100;
+	border: 2px solid #02f100;
+	border-style: outset;
+}
+
+.zPiece{
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f30000;
+	border: 2px solid #f30000;
+	border-style: outset;
+}
+
+.lPiece{
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f0a100;
+	border: 2px solid #f0a100;
+	border-style: outset;
+}
+
+.jPiece{	
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #0000f0;
+	border: 2px solid #0000f0;
+	border-style: outset;
+}
+
+.tPiece{
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #9c00f0;
+	border: 2px solid #9c00f0;
+	border-style: outset;
+}
+
+.openSpace{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: black;
+	border: 1px solid gray;
+}
+
