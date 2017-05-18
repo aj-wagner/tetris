@@ -115,48 +115,31 @@ function moveGame(){
 
 	insertCurPiece();
 
-	
-
 	$('#gameBoard').html(buildBoardStr(currentBoard));
 
-	console.log(detectStopMove(currentBoard, pieceCoors));
-//console.log(pieceCoors);
-	//detectStopMove(board, pieceCoors);
+//	console.log(detectStopMove(currentBoard, pieceCoors));
+
 }
 
+//return true if current piece should stop moving
 function detectStopMove(board, pieceCoors){
 
-//console.log(pieceCoors);
-console.log(board);
-
-console.log(`${pieceCoors[1][0]} ${pieceCoors[1][1]+1}`);
-console.log(`${pieceCoors[2][0]} ${pieceCoors[2][1]+1}`);
 	if ( pieceCoors[0][1] == 19 || pieceCoors[1][1] == 19 || pieceCoors[2][1] == 19 || pieceCoors[3][1] == 19){
 		return true;
 	}
-
-
-	//currentBoard[ pieceCoors[0][1] ] [pieceCoors[0][0]]
-
-
-
- 	else if ( board[pieceCoors[0][0] ][ pieceCoors[0][1]+2 ] > 0 ){
+ 	else if ( board[pieceCoors[0][1] + 1][ pieceCoors[0][0]] > 0 ){
  		return true;
  	}
-
-	else if ( board[pieceCoors[1][0]][pieceCoors[1][1]+2] > 0 ){
+	else if ( board[ pieceCoors[1][1] + 1][ pieceCoors[1][0]] > 0 ){
 		return true;
 	}
-	else if ( board[pieceCoors[2][0]][pieceCoors[2][1]+2] > 0 ){
+	else if ( board[pieceCoors[2][1] +1][pieceCoors[2][0]] > 0 ){
 		return true;
 	}
-	else if ( board[pieceCoors[3][0]][pieceCoors[3][1]+2] > 0 ){
+	else if ( board[pieceCoors[3][1] +1][pieceCoors[3][0]] > 0 ){
 		return true;
 	}
-	
 	return false;
-
-
 }
 
 function detectClearedRows(board){
